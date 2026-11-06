@@ -1,0 +1,24 @@
+[project]
+name = "langchain-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rishikgoud11", email = "trishikgoud@supervity.ai" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.9",
+    "langchain-core>=1.7.6",
+    "langchain-openai>=1.7.4",
+    "pydantic>=2.14.3",
+    "typing>=3.10.0.0",
+]
+
+[project.scripts]
+langchain-tutorial = "langchain_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
